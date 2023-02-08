@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar</title>
+</head>
+<body>
+    <input type="search" value="" id="search" onchange="openpage()">
+
+    <script>
+        function openpage(){
+            var x = document.getElementById("search").value;
+
+            if(x === "Pusified"){
+                window.open("/index.html");
+            }
+
+            if(x == "Lambistias"){
+                window.open("/simp.html");
+            }
+            if(x === "Simpaticos"){
+                window.open("/kibe.html");
+            }
+        }
+    </script>
+    <script src="pro.js"></script>
+</body>
+</html>
